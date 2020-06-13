@@ -263,7 +263,7 @@ static int processFiles(const char *fpath, const struct stat *sb,
         return 0;
 }
 
-static void check_host_endianess(void)
+static void check_host_endianness(void)
 {
 	int i=1;
 	char * ch = (char*)&i;
@@ -281,7 +281,7 @@ int main(int argc, char **argv)
 {
 	int flags =0;
 
-	check_host_endianess();
+	check_host_endianness();
 
 	if (nftw((argc < 2) ? "." : argv[1], processFiles, 20, flags) == -1) {
                perror("nftw");
