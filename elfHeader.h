@@ -57,6 +57,13 @@ typedef struct {
     uint32_t   sh_entsize;
 } Elf32_Shdr;
 
+/*
+  Tag CPU_arch (=6)
+  {"Pre-v4", "v4", "v4T", "v5T", "v5TE", "v5TEJ", "v6", "v6KZ", "v6T2",
+   "v6K", "v7", "v6-M", "v6S-M", "v7E-M", "v8", "v8-R", "v8-M.baseline",
+   "v8-M.mainline", "", "", "", "v8.1-M.mainline"};
+*/
+
 /* Legal values for e_machine (architecture).  */
 #define EM_NONE		 0	/* No machine */
 #define EM_M32		 1	/* AT&T WE 32100 */
